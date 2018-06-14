@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="Neighborhood Map Project" content="Map of Bhimavaram(AP)">
+
+    <title>
+        Neighborhood Map Project</title>
+
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+    </script>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous">
+    </script>
+
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+    </script>
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styling.css">
+</head>
+
+<body>
+    <div class = "top">
+        <h1>My Neighborhood Map Project</h1>
+    </div>
+    <div class="container">
+                    <div id="map">
+                        <!-- Map -->
+                        <p class="map_error"></p>
+                    </div>
+            <div class = "side">
+                <h4 class="side_title">Map Locations</h4>
+                <!-- Search Input -->
+                <input class="search" data-bind="textInput: searchOption, valueUpdate: 'afterkeydown'" placeholder="Search Locations...">
+                <ul class="nav flex-column" data-bind="foreach: myLocationsFilter">
+                    <a href="#"><li class="nav-item text-white location_list" data-bind="text: title, click: $parent.populateAndBounceMarker"></li></a>
+                </ul>
+                <img class="foursquare" src="img/foursquare_attr.png" srcset="img/foursquare_attr@2x.png" alt="Powered By Foursquare!">
+            </div>
+        </div>
+    </div>
+
+    <script
+        src="js/knockout-3.4.2.js" charset="utf-8">
+    </script>
+
+    <script
+        src="js/main.js" charset="utf-8">
+    </script>
+
+    <script
+        src="js/mapview.js" charset="utf-8">
+    </script>
+
+
+    <script
+        src="js/locationsdata.js" charset="utf-8">
+    </script>
+
+    <script
+        src="js/working.js" charset="utf-8">
+    </script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBNhvFu7WUCBCL3f-mmxcksCqugWDvv-yc&callback=startApp"
+        onerror="googleError()">
+    </script>
+</body>
+</html>

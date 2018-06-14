@@ -1,0 +1,72 @@
+.top{
+    background-color: #e6ffee;
+    color: #3bb300;
+}
+.side_title {
+    padding: 20px 5px 10px 5px;
+    color: #bf8040;
+    font-size: 2em;
+}
+
+
+.location_list {
+    padding: 3px 5px 5px 5px;
+    color: #392613;
+}
+.side{
+    margin-left: 1000px;
+    margin-top: -700px;
+    background-color: #e6ccb3;
+}
+#map{
+    width: 74%;
+}
+.foursquare {
+    position: absolute;
+    padding-top: 250px;
+    width: 20%;
+    right: 0;
+}
+
+.title {
+    font-size: 1.3em;
+    color: #4d94ff;
+}
+
+.sub_title {
+    font-size: 1em;
+    color: #3385ff;
+}
+
+.address_title {
+    margin-bottom: 2px;
+    font-size: .95em;
+    color: #6699ff;
+}
+
+.address {
+    margin-bottom: 0;
+    font-size: .9em;
+    color: #0099ff;
+}
+
+.search {
+    width: 95%;
+    font-size: .9em;
+    align: center;
+}
+
+@media (max-width: 768px) {
+    .search {
+        font-size: .7em;
+        margin-top: 5px;
+    }
+}
+
+.map_error {
+    color: #ccffff;
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    text-align: center;
+}
