@@ -1,7 +1,5 @@
 # Map-Project
 
-# Map-Project
-
 # Udacity FEND Neighborhood Map Project
 This app is to demonstrate the ability to use a js framework (`knockout.js`) & Google Maps API.
 The application was made as a the penultimate final project for Udacity's Front-End Nanodegree.
