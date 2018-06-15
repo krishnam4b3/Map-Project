@@ -26,10 +26,10 @@ function AppViewModel() {
             // Foursquare API
             $.getJSON(apiUrl).done(function(marker) {
                 var response = marker.response.venues[0];
-                self.street = response.location.formattedAddress[0];
-                self.city = response.location.formattedAddress[1];
-                self.zip = response.location.formattedAddress[3];
-                self.country = response.location.formattedAddress[4];
+                self.street = response.location.formattedAddress[0] || 'No Street Found';
+                self.city = response.location.formattedAddress[1] || 'No City Found';
+                self.zip = response.location.formattedAddress[3] || 'No Zip Found';
+                self.country = response.location.formattedAddress[4] || 'No country Found';
                 self.category = response.categories[0].shortName;
 
                 self.htmlContentFoursquare =
